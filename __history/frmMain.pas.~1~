@@ -85,15 +85,8 @@ var
   nSelectedIndex: Integer;
 begin
    nSelectedIndex := lstObjects.ItemIndex;
-   if(nSelectedIndex < 0) then
-   begin
-      ShowMessage('Select an Object');
-   end
-   else
-   begin
-      oObjectToDelete := FMyList.Items[nSelectedIndex];
-      FreeAndNil(oObjectToDelete);
-   end;
+   oObjectToDelete := FMyList.Items[nSelectedIndex];
+   FreeAndNil(oObjectToDelete);
 
    ShowList();
 end;

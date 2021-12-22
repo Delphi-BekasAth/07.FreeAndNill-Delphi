@@ -1,7 +1,7 @@
 program LearnDelphi;
 
 uses
-
+  ExceptionLog,
   Forms,
   frmMain in 'frmMain.pas' {Form1};
 
